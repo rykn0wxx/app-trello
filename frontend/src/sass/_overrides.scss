@@ -4,6 +4,10 @@
 .rykn0wxx {
   font-size: 62.5%;
   line-height: 1.4;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 .mudhead {
   font-size: 1.6rem;
@@ -11,6 +15,7 @@
   max-width: 100%;
   max-height: 100%;
   box-sizing: border-box;
+  color: rgba(0,0,0,0.87);
   scrollbar-face-color: rgba(112, 122, 140, 1);
   scrollbar-track-color: #23252e;
 }
@@ -33,7 +38,7 @@
   }
 }
 .app-trans {
-  transition: all ease-in-out 0.3s;
+  transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .layout-content {
   box-sizing: border-box;

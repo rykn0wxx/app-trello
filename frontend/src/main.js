@@ -8,6 +8,7 @@ import { sync } from 'vuex-router-sync'
 
 // Plugins
 import media from '@/plugins/media'
+import MatIco from '@/plugins/mat-ico'
 
 // Global Components
 import '@/components/global'
@@ -25,6 +26,7 @@ import { AppConstant } from './services/utils'
 
 sync(store, router)
 Vue.use(media)
+Vue.use(MatIco)
 Vue.config.productionTip = false
 
 new Vue({

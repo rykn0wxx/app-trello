@@ -1,9 +1,6 @@
 html, body {
   height: 100%;
   position: relative;
-  * {
-    outline: 0;
-  }
 }
 
 body {
@@ -84,6 +81,9 @@ input {
 }
 .md-shadow-bottom-z-2 {
   @include md-shadow-bottom-z-2();
+}
+.md-glow-z1 {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.14), 0 0 2px 2px rgba(0, 0, 0, 0.098), 0 0 5px 1px rgba(0, 0, 0, 0.084);
 }
 
 .md-shadow-animated.md-shadow {

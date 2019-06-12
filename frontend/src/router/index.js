@@ -9,6 +9,7 @@ import Meta from 'vue-meta'
 
 // Routes
 import paths from './paths'
+let routeIndex = 0
 
 function genRoutes (pathObj) {
   const routes = {
@@ -17,6 +18,7 @@ function genRoutes (pathObj) {
     meta: pathObj.meta ? pathObj.meta : { public: false },
     component: (resolve) => import(`@/views/${pathObj.view}.vue`).then(resolve)
   }
+  routes.meta.pathIndex = routeIndex++
   if (pathObj.redirect) routes.redirect = pathObj.redirect
   if (pathObj.children) routes.children = pathObj.children.map(path => genRoutes(path))
   return routes
@@ -37,7 +39,7 @@ const router = new Router({
     }
     return { x: 0, y: 0 }
   },
-  linkActiveClass: 'app-router-active'
+  linkActiveClass: 'app-router-link-active'
 })
 
 router.beforeEach((to, from, next) => {
