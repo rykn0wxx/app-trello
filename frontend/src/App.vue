@@ -1,5 +1,5 @@
 <template>
-  <RouterView class="app page-container relative min-h-full h-full w-full overflow-hidden antialiased" v-cloak />
+  <RouterView class="app page-container antialiased" v-cloak />
 </template>
 
 <script>
@@ -13,5 +13,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style src="./assets/tailwind.css"></style>

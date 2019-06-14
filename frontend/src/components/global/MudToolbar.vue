@@ -1,8 +1,8 @@
 <template>
-  <header class="mud-toolbar md-glow-z1 lg:px-32 px-6 bg-gray-300 flex flex-wrap items-center py-0 mb-16" role="header">
+  <header class="mud-toolbar md-glow-z1 z-3 lg:px-32 px-6 bg-gray-800 flex flex-wrap items-center py-0 mb-0" role="header">
     <div class="brand flex-1 flex justify-between items-center">
-      <router-link to="/">
-        <svg class="fill-current text-gray-700" width="100" height="36" viewBox="0 0 118 26" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 118 26" xml:space="preserve">
+      <router-link to="/" class="block">
+        <svg class="fill-current text-gray-100 w-40 h-14" viewBox="0 0 118 26" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 118 26" xml:space="preserve">
           <path stroke="none" stroke-width="1" d="M9.45175 10.544C9.13175 10.464 8.75575 10.384 8.32375 10.304C7.89175 10.208 7.42775 10.16 6.93175 10.16C6.70775 10.16 6.43575 10.184 6.11575 10.232C5.81175 10.264 5.57975 10.304 5.41975 10.352V20H1.84375V8.04801C2.48375 7.82401 3.23575 7.61601 4.09975 7.42401C4.97975 7.21601 5.95575 7.11201 7.02775 7.11201C7.21975 7.11201 7.45175 7.12801 7.72375 7.16001C7.99575 7.17601 8.26775 7.20801 8.53975 7.25601C8.81175 7.28801 9.08375 7.33601 9.35575 7.40001C9.62775 7.44801 9.85975 7.51201 10.0518 7.59201L9.45175 10.544Z"/>
           <path stroke="none" stroke-width="1" d="M24.4067 7.37601C23.6867 9.80801 22.9347 12.088 22.1507 14.216C21.3667 16.344 20.5108 18.408 19.5828 20.408C19.2468 21.128 18.9107 21.736 18.5747 22.232C18.2387 22.744 17.8707 23.16 17.4707 23.48C17.0707 23.816 16.6147 24.056 16.1027 24.2C15.6067 24.36 15.0227 24.44 14.3507 24.44C13.7907 24.44 13.2707 24.384 12.7907 24.272C12.3267 24.176 11.9427 24.064 11.6387 23.936L12.2627 21.08C12.6307 21.208 12.9587 21.296 13.2467 21.344C13.5347 21.392 13.8387 21.416 14.1587 21.416C14.7987 21.416 15.2867 21.24 15.6227 20.888C15.9747 20.552 16.2707 20.08 16.5107 19.472C15.6947 17.872 14.8787 16.08 14.0627 14.096C13.2467 12.096 12.4787 9.85601 11.7587 7.37601H15.5507C15.7107 8.00001 15.8947 8.68001 16.1027 9.41601C16.3267 10.136 16.5587 10.872 16.7987 11.624C17.0387 12.36 17.2787 13.08 17.5187 13.784C17.7747 14.488 18.0147 15.128 18.2387 15.704C18.4467 15.128 18.6627 14.488 18.8867 13.784C19.1107 13.08 19.3267 12.36 19.5347 11.624C19.7587 10.872 19.9667 10.136 20.1587 9.41601C20.3667 8.68001 20.5508 8.00001 20.7108 7.37601H24.4067Z"/>
           <path stroke="none" stroke-width="1" d="M30.3797 11.936C30.7317 11.552 31.0917 11.152 31.4597 10.736C31.8437 10.32 32.2117 9.91201 32.5637 9.51201C32.9157 9.09601 33.2437 8.70401 33.5477 8.33601C33.8677 7.96801 34.1398 7.64801 34.3638 7.37601H38.6117C37.7637 8.35201 36.9317 9.28801 36.1157 10.184C35.3157 11.064 34.4358 11.976 33.4757 12.92C33.9557 13.352 34.4517 13.872 34.9637 14.48C35.4757 15.072 35.9717 15.688 36.4517 16.328C36.9317 16.968 37.3717 17.608 37.7717 18.248C38.1717 18.888 38.5077 19.472 38.7797 20H34.6758C34.4198 19.584 34.1238 19.128 33.7878 18.632C33.4678 18.12 33.1237 17.616 32.7557 17.12C32.3877 16.608 31.9957 16.12 31.5798 15.656C31.1797 15.192 30.7797 14.8 30.3797 14.48V20H26.8037V1.95201L30.3797 1.37601V11.936Z"/>
@@ -16,20 +16,25 @@
     </div>
     <div class="navigation flex items-center justify-end w-auto">
       <nav tabindex="-1">
-        <ul class="flex items-center justify-between text-gray-600 pt-0">
+        <ul class="flex items-center justify-between text-gray-500 pt-0">
           <li class="ml-4">
-            <router-link to="/home" class="app-trans text-3xl font-medium tracking-expanded leading-snug p-4 pt-5 block border-b-3 border-transparent hover:border-indigo-400 hover:text-gray-900">
+            <router-link to="/home" class="app-trans text-3xl font-medium tracking-expanded leading-snug p-4 pt-5 block border-b-3 border-transparent hover:border-gray-400 hover:text-gray-300">
               Home
             </router-link>
           </li>
           <li class="ml-4">
-            <router-link to="/about" class="app-trans text-3xl font-medium tracking-expanded leading-snug p-4 pt-5 block border-b-3 border-transparent hover:border-indigo-400 hover:text-gray-900">
+            <router-link to="/about" class="app-trans text-3xl font-medium tracking-expanded leading-snug p-4 pt-5 block border-b-3 border-transparent hover:border-gray-400 hover:text-gray-300">
               About
             </router-link>
           </li>
           <li class="ml-4">
-            <router-link to="/demo" class="app-trans text-3xl font-medium tracking-expanded leading-snug p-4 pt-5 block border-b-3 border-transparent hover:border-indigo-400 hover:text-gray-900">
+            <router-link to="/demo" class="app-trans text-3xl font-medium tracking-expanded leading-snug p-4 pt-5 block border-b-3 border-transparent hover:border-gray-400 hover:text-gray-300">
               Demo
+            </router-link>
+          </li>
+          <li class="ml-4">
+            <router-link to="/auth" class="app-trans text-3xl font-medium tracking-expanded leading-snug p-4 pt-5 block border-b-3 border-transparent hover:border-gray-400 hover:text-gray-300">
+              AuthLogin
             </router-link>
           </li>
         </ul>
@@ -45,13 +50,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mud-toolbar {
-  .navigation {
-    min-height: 50px;
-  }
-  .app-router-link-active {
-    color: rgba(0,0,0,0.87);
-    border-bottom-color: #3c366b;
-  }
-}
 </style>

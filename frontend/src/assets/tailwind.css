@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mud-toolbar .app-router-link-active {
+  @apply border-gray-300 text-gray-200;
+}

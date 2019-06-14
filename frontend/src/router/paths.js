@@ -23,5 +23,17 @@ export default [
         view: 'Demo'
       }
     ]
+  }, {
+    path: '/auth',
+    name: 'LayoutsAuthentication',
+    view: 'layouts/Authentication',
+    redirect: '/auth/login',
+    children: [
+      {
+        path: '/auth/login',
+        name: 'AuthLogin',
+        view: 'auth/Login'
+      }
+    ]
   }
 ]

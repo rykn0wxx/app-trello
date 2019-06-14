@@ -14,7 +14,7 @@ import MatIco from '@/plugins/mat-ico'
 import '@/components/global'
 
 // Tailwind Styles
-import '@/assets/tailwind-styles.css'
+// import '@/assets/tailwind-styles.css'
 // Custom Styles
 import '@/sass/app-style.scss'
 

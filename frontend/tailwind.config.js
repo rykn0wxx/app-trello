@@ -133,11 +133,14 @@ module.exports = {
       '2': '0.5rem',
       '3': '0.75rem',
       '4': '1rem',
-      '5': '1.25rem',
+      '5': '1.2rem',
       '6': '1.5rem',
       '8': '2rem',
       '10': '2.5rem',
       '12': '3rem',
+      '13': '3.2rem',
+      '14': '3.6rem',
+      '15': '3.8rem',
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
@@ -193,7 +196,9 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none'
     },
-    container: {},
+    container: {
+      center: true
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -411,6 +416,7 @@ module.exports = {
     zIndex: {
       auto: 'auto',
       '0': '0',
+      '3': '3',
       '10': '10',
       '20': '20',
       '30': '30',
